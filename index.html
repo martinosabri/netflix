@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.net.jpg" type="image/png">
+    <title>Netflix</title>
+</head>
+
+<body>
+
+
+    <div class="nefli">
+        <img src="Netflix-Logo-removebg-preview.png" alt="" height="150px"
+            width="150px">
+        <div class="botonn">
+
+            <a href="iniciar.html" target="_blank">Iniciar sesion</a>
+        </div>
+    </div>
+
+    <div class="fondo">
+        <div class="overlay"></div>
+
+
+        <div class="fondo-texto">
+            <h1>Películas y series ilimitadas y mucho más</h1>
+            <h2>A partir de $ 5.999. Cancela cuando quieras.</h2>
+            </p>
+            <p><strong>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de
+                    Netflix.</strong>
+            </p>
+            <form class="formulario" action="registro.html" method="get">
+                <input type="email" name="email" placeholder="email" id="boton1">
+                <input type="submit" id="boton2" value="Comenzar" >
+            </form>
+        </div>
+    </div>
+    <div class="contenedor-carrusel">
+        <button class="flecha izquierda" onclick="moverIzquierda()">&#10094;</button>
+
+        <script>
+            function moverIzquierda() {
+
+                console.log("Moviendo a la izquierda");
+            }
+        </script>
+
+
+        <div class="contenedor-cajas">
+            <div class="caja">
+                <img src="data:image/jpeg;base64,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"
+                    alt="" class="imagen-caja">
+               
+            </div>
+            <div class="caja">
+                <img src="atrapados.jpg" alt="" class="imagen-caja">
+               
+            </div>
+            <div class="caja">
+                <img src="chinos.jpg" alt="" class="imagen-caja">
+                
+            </div>
+
+            <div class="caja">
+                <img src="el jardinero.jpg" alt="" class="imagen-caja">
+                
+            </div>
+            <div class="caja">
+                <img src="envidiosa.jpg" alt="" class="imagen-caja">
+             
+            </div>
+            <div class="caja">
+                <img src="estragos.jpg" alt="" class="imagen-caja">
+            
+            </div>
+            <div class="caja">
+                <img src="mirror.jpg" alt="" class="imagen-caja">
+           
+            </div>
+            <div class="caja">
+                <img src="quedate quieto.jpg" alt="" class="imagen-caja">
+            </div>
+            <div class="caja">
+                <img src="random.jpg" alt="" class="imagen-caja">
+            </div>
+            <div class="caja">
+                <img src="you.jpg" alt="" class="imagen-caja">
+            </div>
+        </div>
+        <button class="flecha derecha" onclick="moverDerecha()">&#10095;</button>
+    </div>
+    </form>
+    <div class="masmoti">
+    <h2>Mas motivos para unirte  </h2>
+    </div>
+    <section class="cajitas">
+        <div class="caja">
+
+            <p>Cancela o cambia de plan en cualquier momento
+            </p>
+        </div>
+        <div class="caja">
+            <p>Cancela o cambia de plan en cualquier momento
+            </p>
+        </div>
+        <div class="caja">
+            <p>Ve Netflix en tus dispositivos favoritos
+            </p>
+        </div>
+        <div class="caja">
+            <p>Historias a la medida de tus gustos
+            </p>
+        </div>
+    </section>
+    <div class="pree">
+    <h2>Preguntas frecuentes</h2>
+    </div>
+    <div class="principal">
+
+
+        <div class="item">
+            <input type="checkbox" id="faq1" class="fa">
+            <label for="faq1" class="cuestionario">
+                <span class="icon">+</span>
+                ¿Qué es Netflix?
+            </label>
+            <div class="p">
+                <p>Netflix es un servicio de streaming que ofrece una amplia variedad de películas, series y
+                    documentales por suscripción.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <input type="checkbox" id="faq2" class="fa">
+            <label for="faq2" class="cuestionario">
+                <span class="icon">+</span>
+                ¿Cuánto cuesta Netflix?
+            </label>
+            <div class="p">
+                <p>El costo de Netflix varía según el plan: Básico, Estándar y Premium.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <input type="checkbox" id="faq3" class="fa">
+            <label for="faq3" class="cuestionario">
+                <span class="icon">+</span>
+                ¿Dónde puedo ver Netflix?
+            </label>
+            <div class="p">
+                <p>Puedes ver Netflix en Smart TVs, computadoras, tabletas y teléfonos inteligentes.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <input type="checkbox" id="faq4" class="fa">
+            <label for="faq4" class="cuestionario">
+                <span class="icon">+</span>
+                ¿Cómo cancelo mi suscripción?
+            </label>
+            <div class="p">
+                <p>Puedes cancelar tu suscripción en la sección de cuenta de Netflix en su sitio web.</p>
+            </div>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="faq5" class="fa">
+            <label for="faq5" class="cuestionario">
+                <span class="icon">+</span>
+                ¿Que puedo ver en Netflix?
+            </label>
+            <div class="p">
+                <p>Netflix tiene un amplio catálogo de películas, series, documentales, animes, originales premiados y
+                    más. Todo lo que quieras ver, cuando quieras.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <input type="checkbox" id="faq6" class="fa">
+            <label for="faq6" class="cuestionario">
+                <span class="icon">+</span>
+                ¿Es bueno netflix para los niños?
+            </label>
+            <div class="p">
+                <p>La experiencia de Netflix para niños está incluida en la membresía para que los padres tengan el
+                    control mientras los peques disfrutan series y películas familiares en su propio espacio.
+
+                    Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir
+                    el contenido que pueden ver los niños en función de la clasificación por edad y bloquear
+                    determinados títulos que no quieras que los niños vean.</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="hi">
+        <a href="https://help.netflix.com/contactus" target="_blank">¿Preguntas? Contactanos</a>
+    </div>
+    <div class="caja-enlaces">
+        <nav class="preguntas">
+            <a href="https://help.netflix.com/support/412" terget="_blank">Preguntas frecuntes</a>
+            <a href="https://help.netflix.com/" target="_blank">Centro de ayuda</a>
+            <a href="https://www.netflix.com/youraccount" target="_blank">Cuenta </a>
+
+
+        </nav>
+        <nav class="prensa">
+            <a href="https://media.netflix.com/" target="_blank">Prensa</a>
+            <a href="http://ir.netflix.com/" target="_blank">Relaciones con inversionistas </a>
+            <a href="https://jobs.netflix.com/jobs" target="_blank">Empleo</a>
+        </nav>
+        <nav class="formas">
+            <a href="https://www.netflix.com/watch" target="_blank">Formas de ver</a>
+            <a href="https://help.netflix.com/legal/termsofuse" target="_blank">Terminos de uso</a>
+            <a href="https://help.netflix.com/legal/privacy" target="_blank">Privacidad</a>
+
+        </nav>
+        <nav class="preferencias">
+            <a href="https://www.netflix.com/ar/redeem#" target="_blank">Preferencias de cookies</a>
+            <a href="https://help.netflix.com/legal/corpinfo" target="_blank">Informacion corporativa </a>
+            <a href="https://help.netflix.com/contactus" target="_blank">Contactanos</a>
+        </nav>
+        <nav class="prueba">
+            <a href="https://fast.com/" target="_blank">Prueba de velocidad </a>
+            <a href="https://help.netflix.com/legal/notices" target="_blank">Avisos legales</a>
+            <a href="https://www.netflix.com/ar/browse/genre/839338" target="_blank">Solo en Netflix</a>
+        </nav>
+    </div>
+</body>
+
+</html>
