@@ -1,0 +1,373 @@
+body {
+    background-color: rgba(0, 0, 0, 0.943) !important;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.fondo {
+    max-width: 100%;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-image: url('neflix.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 40px;
+    pointer-events: none;
+}
+
+.fondo-texto {
+    text-align: center;
+    width: 50%;
+    color: white;
+    z-index: 2;
+}
+
+.contenedor-carrusel {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+}
+
+.contenedor-cajas {
+    display: flex;
+    transition: transform 0.3s ease;
+    padding: 50px;
+}
+
+.caja {
+    background-color: red;
+    width: calc(10% - 10px);
+    margin: 5px;
+    border-radius: 8px;
+    text-align: center;
+    flex-shrink: 0;
+    color: white;
+   
+    box-sizing: border-box;
+}
+
+.imagen-caja {
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.flecha {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.flecha.izquierda {
+    margin-right: 10px;
+    color:white;
+}
+
+.flecha.derecha {
+    margin-left: 10px;
+    color:white;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+.formulario{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: row;
+}
+.botonn {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.botonn a {
+    padding: 7px;
+    background-color: red;
+    display: flex;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    color: rgba(250, 234, 234, 0.936);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+#boton1{
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.532);
+    color: black;
+    width: 200px;
+    height: 45px;
+    font-weight: bold;
+    border-radius: 15px;
+    
+}
+
+#boton2 {
+    display: flex;
+    width: 120px;
+    height: 30px;
+    background-color: black;
+    color: white;
+   font-weight: bold;
+   border-radius: 10px;
+
+}
+
+
+
+.cajitas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.caja {
+    width: 150px;
+    height: 200px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caja p {
+    margin: 0;
+}
+
+.principal {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+
+.item {
+    border-bottom: 1px solid #ddd;
+ 
+}
+
+.cuestionario {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.p {
+    display: none;
+    padding: 15px;
+}
+
+.fa:checked + .cuestionario + .p {
+    display: block;
+}
+
+.nefli {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hi {
+    display: flex;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.hi a {
+    color: white;
+    text-decoration: none;
+}
+
+.hi a:hover {
+    border-bottom: 1px solid red;
+}
+
+
+.caja-enlaces {
+    background-color: black;
+    width: 100%;
+    max-width: 1300px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px 60px; 
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+.caja-enlaces nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+
+.preguntas a,
+.prensa a,
+.formas a,
+.preferencias a,
+.prueba a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: border-bottom 0.3s;
+    padding-bottom: 5px;
+}
+
+
+.preguntas a:hover,
+.prensa a:hover,
+.formas a:hover,
+.preferencias a:hover,
+.prueba a:hover {
+    border-bottom: 1px solid red;
+}
+
+.masmoti{
+    color: white;
+}
+.pree{
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .fondo {
+        height: auto;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .fondo-texto {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .cajitas {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .caja {
+        width: 45%;
+        height: 180px;
+        margin: 10px 5px;
+    }
+
+    .botonn {
+        justify-content: center;
+    }
+
+    .botonn a {
+        width: 80px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .contenedor-carrusel {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .contenedor-cajas {
+        flex-wrap: nowrap;
+    }
+
+    .caja {
+        width: 120px !important;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .fondo {
+        border-radius: 15px;
+        padding: 5px;
+    }
+
+    .fondo-texto {
+        font-size: 14px;
+    }
+
+    .caja {
+        width: 90% !important;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .botonn a {
+        width: 70px;
+        height: 35px;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .hi {
+        font-size: 24px;
+    }
+
+    .preguntas, .prensa, .formas, .preferencias, .prueba {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
